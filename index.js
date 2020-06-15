@@ -6,3 +6,17 @@
 // If we counted down and timer reaches 0
 // Reset the border
 // Reset the internal timer to get ready for another run
+
+class Timer {
+  constructor(durationInput, startButton, pauseButton) {
+    this.durationInput = durationInput;
+    this.startButton = startButton;
+    this.pauseButton = pauseButton;
+
+    this.startButton.addEventListener('click', this.start);
+  }
+
+  start() {
+
+  }
+}
