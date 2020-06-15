@@ -16,9 +16,12 @@ class Timer {
     this.startButton.addEventListener('click', this.start);
   }
 
-  start() {
+  start = () => {
+    this.tick();
+    setInterval(this.tick, 1000);
+  };
 
-  }
+  tick = () => {};
 }
 
 const durationInput = document.querySelector('#duration');
